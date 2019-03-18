@@ -1,3 +1,8 @@
+# Second iteration of controlling motors using RPi, L298n and DC Motors. The code is inspired by @Sentdex from Youtube
+https://youtu.be/LlFkybEQFFA 
+# This code assigns keyboard keys to the movements so that one can control using keyboard. This is an extension on Robot_1 code
+#
+
 import RPi.GPIO as gpio
 import time
 import sys
