@@ -6,17 +6,13 @@ https://youtu.be/LlFkybEQFFA
 import RPi.GPIO as gpio
 import time
 
-# GPIO 19 and 11 are connected to Left hand wheels and 13 and 15 connected to Right hand wheels
-# GPIO 19 & 15 represent forward movements and 11 & 13 represent backwoard movements
-
 def init():
     gpio.setmode(gpio.BOARD)
     gpio.setup(19, gpio.OUT)
     gpio.setup(11, gpio.OUT)
     gpio.setup(13, gpio.OUT)
     gpio.setup(15, gpio.OUT)
-   
-# Defining forward movement
+
 def forward(tf):
     init()
     gpio.output(19, True)
@@ -26,7 +22,6 @@ def forward(tf):
     time.sleep(tf)
     gpio.cleanup()
 
-# Defining reverse movement
 def reverse(tf):
     init()
     gpio.output(19, False)
@@ -36,7 +31,6 @@ def reverse(tf):
     time.sleep(tf)
     gpio.cleanup()
 
-# Defining right movement
 def right(tf):
     init()
     gpio.output(19, True )
@@ -46,7 +40,6 @@ def right(tf):
     time.sleep(tf)
     gpio.cleanup()
 
-# Defining left movement
 def left(tf):
     init()
     gpio.output(19, False)
@@ -56,7 +49,7 @@ def left(tf):
     time.sleep(tf)
     gpio.cleanup()
 
-# Defining pivot_right movement
+
 def p_right(tf):
     init()
     gpio.output(19, True)
@@ -66,7 +59,7 @@ def p_right(tf):
     time.sleep(tf)
     gpio.cleanup()
 
-# Defining pivot_left movement
+
 def p_left(tf):
     init()
     gpio.output(19, False)
@@ -76,5 +69,4 @@ def p_left(tf):
     time.sleep(tf)
     gpio.cleanup()
 
-#Test movements for 2 seconds (as example)
 p_left(2)
