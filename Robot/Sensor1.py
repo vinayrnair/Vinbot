@@ -1,6 +1,13 @@
+# First attempt of controlling ultrasonic sensor HC-SR04 using RPi. The code is inspired by @Sentdex from Youtube
+https://youtu.be/LlFkybEQFFA 
+# This code uses GPIO pins, 1k and 2k resistors on the breadboard to connect hc-sr04 to raspberry pi. This provides basic functionality of measuring distance
+#
+
+
 import RPi.GPIO as gpio
 import time
 
+#GPIO 12 is set for Trig and 16 for Echo
 def distance(measure='cm'):
     gpio.setmode(gpio.BOARD)
     gpio.setup(12, gpio.OUT)
