@@ -1,8 +1,11 @@
 # Vinbot
 This respository is my project to play with Raspberry Pi, few sensors and AI to create some interesting things
 
-# Overview
-TBD
+# Disclaimer
+- I am not a programmer by education or experience. 
+- Most codes are copied from other resources in github and / or other internet sites
+- I give due credits to all from whom I have copied or 'taken inspiration' from. In case I missed any point, please let me know and I will correct them
+- I am a newbie to coding as well as using github. Any critisicm / comments / suggestions are most welcome
 
 # High level user stories
 ## Basic hardware integration
