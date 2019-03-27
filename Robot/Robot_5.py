@@ -1,3 +1,5 @@
+# Combines earlier Robot_1.py, Distance_1.py programs together.
+
 import RPi.GPIO as gpio
 import time
 import sys
